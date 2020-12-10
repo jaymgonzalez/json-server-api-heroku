@@ -69,9 +69,9 @@ function createSlug(value) {
     .toLowerCase();
 }
 
-// function validateCourse(course) {
-//   if (!course.title) return "Title is required.";
-//   if (!course.authorId) return "Author is required.";
-//   if (!course.category) return "Category is required.";
-//   return "";
-// }
+function validateCourse(course) {
+  if (!course.title) return "Title is required.";
+  if (!course.authorId) return "Author is required.";
+  if (!course.category) return "Category is required.";
+  return "";
+}
