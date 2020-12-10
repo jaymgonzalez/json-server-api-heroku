@@ -28,28 +28,27 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 // Simulate delay on all requests
-server.use(function (req, res, next) {
-  setTimeout(next, 0);
-});
+// server.use(function (req, res, next) {
+//   setTimeout(next, 0);
+// });
 
 // Declaring custom routes below. Add custom routes before JSON Server router
 
 // Add createdAt to all POSTS
-server.use((req, res, next) => {
+server.use((req, res) => {
   if (req.method === "POST") {
     req.body.createdAt = Date.now();
   }
   // Continue to JSON Server router
-  next();
+
 });
 
-server.post("/courses/", function (req, res, next) {
+server.post("/courses/", function (req, res) {
   const error = validateCourse(req.body);
   if (error) {
     res.status(400).send(error);
   } else {
     req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
-    next();
   }
 });
 
