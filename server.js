@@ -41,12 +41,13 @@ server.use(jsonServer.bodyParser);
 
 // });
 
-server.post("/courses/", function (req, res) {
+server.post("/courses/", function (req, res, next) {
   const error = validateCourse(req.body);
   if (error) {
     res.status(400).send(error);
   } else {
     req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
+    next();
   }
 });
 
