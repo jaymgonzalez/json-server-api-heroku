@@ -41,14 +41,6 @@ server.use(jsonServer.bodyParser);
 
 // });
 
-// server.post("/courses/", function (req, res) {
-//   const error = validateCourse(req.body);
-//   if (error) {
-//     res.status(400).send(error);
-//   } else {
-//     req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
-//   }
-// });
 
 // Use default router
 server.use(router);
@@ -59,15 +51,23 @@ server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
 
+server.post("/courses/", function (req, res) {
+  const error = validateCourse(req.body);
+  if (error) {
+    res.status(400).send(error);
+  } else {
+    req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
+  }
+});
 // Centralized logic
 
 // Returns a URL friendly slug
-// function createSlug(value) {
-//   return value
-//     .replace(/[^a-z0-9_]+/gi, "-")
-//     .replace(/^-|-$/g, "")
-//     .toLowerCase();
-// }
+function createSlug(value) {
+  return value
+    .replace(/[^a-z0-9_]+/gi, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
+}
 
 // function validateCourse(course) {
 //   if (!course.title) return "Title is required.";
