@@ -2,73 +2,73 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth0",
-      "slug": "react-auth0-authentication-security",
-      "authorId": 1,
-      "category": "JavaScript"
+      "slug": "git-essential-training-the-basics",
+      "title": "Git Essential Training: The Basics",
+      "authorId": 12,
+      "category": "Git"
     },
     {
       "id": 2,
-      "title": "React: The Big Picture",
-      "slug": "react-big-picture",
-      "authorId": 2,
+      "slug": "javascript-closures",
+      "title": "JavaScript: Closures",
+      "authorId": 7,
       "category": "JavaScript"
     },
     {
       "id": 3,
-      "title": "Creating Reusable React Components",
-      "slug": "react-creating-reusable-components",
-      "authorId": 1,
+      "slug": "javascript-scope",
+      "title": "JavaScript: Scope",
+      "authorId": 6,
       "category": "JavaScript"
     },
     {
       "id": 4,
-      "title": "Building a JavaScript Development Environment",
-      "slug": "javascript-development-environment",
-      "authorId": 3,
+      "slug": "javascript-classes",
+      "title": "JavaScript: Classes",
+      "authorId": 6,
       "category": "JavaScript"
     },
     {
       "id": 5,
-      "title": "Building Applications with React and Redux",
-      "slug": "react-redux-react-router-es6",
-      "authorId": 3,
+      "slug": "javascript-prototypes",
+      "title": "JavaScript: Prototypes",
+      "authorId": 7,
       "category": "JavaScript"
     },
     {
       "id": 6,
-      "title": "Building Applications in React and Flux",
-      "slug": "react-flux-building-applications",
-      "authorId": 1,
+      "slug": "learning-javascript-debugging",
+      "title": "Learning JavaScript Debugging",
+      "authorId": 8,
       "category": "JavaScript"
     },
     {
       "id": 7,
-      "title": "Clean Code: Writing Code for Humans",
-      "slug": "writing-clean-code-humans",
-      "authorId": 2,
-      "category": "Software Practices"
+      "slug": "learning-functional-programming-with-javascript-es5",
+      "title": "Learning Functional Programming with JavaScript (ES5)",
+      "authorId": 9,
+      "category": "JavaScript"
     },
     {
       "id": 8,
-      "title": "Architecting Applications for the Real World",
-      "slug": "architecting-applications-dotnet",
-      "authorId": 1,
-      "category": "Software Architecture"
+      "slug": "javascript-best-practices-for-data",
+      "title": "JavaScript: Best Practices for Data",
+      "authorId": 7,
+      "category": "JavaScript"
     },
     {
       "id": 9,
-      "title": "Becoming an Outlier: Reprogramming the Developer Mind",
-      "slug": "career-reboot-for-developer-mind",
-      "authorId": 1,
-      "category": "Career"
+      "slug": "serverless-and-microservices-for-aws",
+      "title": "Serverless and Microservices for AWS",
+      "authorId": 11,
+      "category": "AWS"
     },
     {
       "id": 10,
-      "title": "Web Component Fundamentals",
-      "slug": "web-components-shadow-dom",
-      "authorId": 3,
-      "category": "HTML5"
+      "slug": "building-serverless-apps-on-aws",
+      "title": "Building Serverless Apps on AWS",
+      "authorId": 6,
+      "category": "AWS"
     }
   ],
   "authors": [
@@ -78,11 +78,47 @@
     },
     {
       "id": 2,
-      "name": "Scott Allen"
+      "name": "Andrew Mead"
     },
     {
       "id": 3,
-      "name": "Dan Wahlin"
+      "name": "Neal Davis"
+    },
+    {
+      "id": 4,
+      "name": "Thomas Weibenfalk"
+    },
+    {
+      "id": 5,
+      "name": "Rob Percival"
+    },
+    {
+      "id": 6,
+      "name": "Emmanuel Henri"
+    },
+    {
+      "id": 7,
+      "name": "Sasha Vodnik"
+    },
+    {
+      "id": 8,
+      "name": "Joe Chellman"
+    },
+    {
+      "id": 9,
+      "name": "Shaun Wassell"
+    },
+    {
+      "id": 10,
+      "name": "Troy Miles"
+    },
+    {
+      "id": 11,
+      "name": "Aileen Smith"
+    },
+    {
+      "id": 12,
+      "name": "Kevin Skoglund"
     }
   ]
 }
