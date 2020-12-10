@@ -23,7 +23,7 @@ const port = process.env.PORT || 3001;
 server.use(middlewares);
 
 // To handle POST, PUT and PATCH you need to use a body-parser. Using JSON Server's bodyParser
-// server.use(jsonServer.bodyParser);
+server.use(jsonServer.bodyParser);
 
 // Simulate delay on all requests
 // server.use(function (req, res, next) {
